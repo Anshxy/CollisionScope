@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Globe from "./components/Globe";
 
 export default function Home() {
@@ -11,7 +10,6 @@ export default function Home() {
 
       <Globe />
       
-
       <footer>
         <p>[ Detection of satellite collisions ]</p>
       </footer>

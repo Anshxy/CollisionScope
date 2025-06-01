@@ -14,8 +14,12 @@ nav, footer {
   z-index: 2;
 }
 
+
+
 nav {
-  top:0;
+  top: 0;
+  flex-direction: column;  
+  gap: 0.3;             
 }
 
 footer {
@@ -30,9 +34,18 @@ h1 {
   color: #fff;
 }
 
+h2 {
+  color: #ccc;             
+  font-family: "Gojo", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+
 p {
   text-transform: uppercase;
   font-family: "Akkurat Mono", monospace;
   font-size: 11px;
   color: #777;
 }
+

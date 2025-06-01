@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛰️[CollisionScope](https://collisionscope.vercel.app/)
 
-## Getting Started
+[**CollisionScope**](https://collisionscope.vercel.app/) is a 3D satellite visualisation tool that detects and displays potential satellite collisions using real world orbital data. 
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![image](https://github.com/user-attachments/assets/3c4f8227-b48b-4e84-8bea-eee78565400f)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- Real time rendering of Earth with day/night, cloud and star textures
 
-To learn more about Next.js, take a look at the following resources:
+- Displays satellites (red) and debris (grey) using parsed TLE data and Three.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Collision detection engine based on a proximity threshold of **1 Kilometer**
+  
+- Searchable overlay showcasing collision details
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Data
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The app uses local TLE files stored in ```/OrbitalData```
+- ```satellite_data.txt``` (Satellites)
+- ```fengyun_space_debris.txt``` (Space Debris)
+- ```iridium_space_debris.txt``` (Space Debris)
+  
+**This TLE data was sourced from [Celestrak](https://celestrak.org/)**
+**Earth texture maps obtained from [Solar System Scope](https://www.solarsystemscope.com/textures/).**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Constraints
+Due to the limited computational resources provided on the [live demo](https://collisionscope.vercel.app/) the input has been cut down to a small subset of satellites and space debris. As a result, the potential collisions shown dont represent the full list of collisions. 
+
+If you’d like to explore a more comprehensive set of data and adjust the number of collisions or thresholds yourself, you can clone the repository and run the app locally. This way, you’ll have full control over the input size and filter settings without the limitations of the live demo.
+
+
+## Author
+
+Built by Ansh Rawat

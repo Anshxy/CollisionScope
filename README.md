@@ -39,4 +39,4 @@ If you’d like to explore a more comprehensive set of data and adjust the numbe
 
 ## Author
 
-Built by Ansh Rawat
+Built by Ansh Rawat and Adrian Jalgha

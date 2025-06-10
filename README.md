@@ -36,7 +36,9 @@ Due to the limited computational resources provided on the [live demo](https://c
 
 If you’d like to explore a more comprehensive set of data and adjust the number of collisions or thresholds yourself, you can clone the repository and run the app locally. This way, you’ll have full control over the input size and filter settings without the limitations of the live demo.
 
+## Contributions 
+Special thanks to Adrian Jalgha for their review of the physics and mathematical calculations used in this application, ensuring its accuracy.
 
 ## Author
 
-Built by Ansh Rawat and Adrian Jalgha
+Built by Ansh Rawat

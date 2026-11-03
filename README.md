@@ -1,4 +1,4 @@
-# 🛰️[CollisionScope](https://collisionscope.vercel.app/)
+# [CollisionScope](https://collisionscope.vercel.app/)
 
 [**CollisionScope**](https://collisionscope.vercel.app/) is a 3D satellite visualisation tool that detects and displays potential satellite collisions using real world orbital data. 
 
